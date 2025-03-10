@@ -32,10 +32,11 @@ ruby client_search_app.rb <command> <field> <query> [file]
 
 ### Commands
 
-- `` — Search clients by specified field and query.
+- `` — Dynamic Search clients by specified field and query.
 
   ```bash
-  ruby client_search_app.rb search full_name Jane clients.json
+  ruby client_search_app.rb search full_name "Jane" clients.json
+  ruby client_search_app.rb search email "john.doe@gmail.com" clients.json
   ```
 
 - `` — Find clients with duplicate emails.
